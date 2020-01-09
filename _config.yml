@@ -100,14 +100,6 @@ theme: next
 deploy:
   type: ''
 
-# Symbol count for NexT
-symbols_count_time:
-  symbols: true
-  time: true
-  total_symbols: true
-  total_time: true
-  exclude_codeblock: true
-
 # ---------------------------------------------------------------
 # Theme Core Configuration Settings
 # See: https://theme-next.org/docs/theme-settings/
@@ -370,6 +362,11 @@ symbols_count_time:
   item_text_total: false
   awl: 4
   wpm: 275
+  symbols: true
+  time: true
+  total_symbols: true
+  total_time: true
+  exclude_codeblock: true
 
 # Use icon instead of the symbol # to indicate the tag at the bottom of the post
 tag_icon: false
