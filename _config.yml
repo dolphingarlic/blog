@@ -100,8 +100,3 @@ theme: next
 deploy:
   type: git
   repo: https://github.com/dolphingarlic/blog.git
-
-# Sitemap
-sitemap:
-  path: sitemap.xml
-  template: ./sitemap_template.xml
