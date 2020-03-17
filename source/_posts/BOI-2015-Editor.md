@@ -34,7 +34,7 @@ Before we move on though, view each operation as a node in a graph. If $Y$ undoe
 
 Notice how the answer for $Y$ is simply the answer for $P_Y$. Additionally, our graph is a forest.
 
-The graph for the above test case would look like:
+For example, the graph for the above example would look like:
 {% asset_img graph.png Graph %}
 
 ## Observation 2
@@ -49,7 +49,7 @@ This is because $P_X + 1$ is the most recent active operation $X$ could undo. Th
 
 We essentially want the most recent operation with level strictly less than the current **undo**. We can use suffix minimums and binary lifting to find this operation.
 
-The time complexity is $O(N log N)$ and this gets us 100 points.
+The time complexity is $O(N \log N)$ and this gets us 100 points.
 
 ## Code
 
