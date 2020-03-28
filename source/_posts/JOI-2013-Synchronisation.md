@@ -2,9 +2,9 @@
 title: JOI 2013 Synchronisation
 date: 2020-01-05 15:51:34
 tags:
-- JOI
-- Programming
-- Olympiad
+    - JOI
+    - Programming
+    - Olympiad
 mathjax: true
 ---
 
