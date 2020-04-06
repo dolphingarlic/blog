@@ -8,8 +8,6 @@ tags:
 mathjax: true
 ---
 
-## Introduction
-
 Today, I'd like to share a really cool problem I solved from the Japanese Olympiad in Informatics. This problem is [Synchronisation](https://oj.uz/problem/view/JOI13_synchronization) from the 2013 Open Contest.
 
 Here's a quick summary of the problem: You have $N \leq 10^5$ computers and $N - 1$ connections that form a tree. Initially, all connections are inactive and all computers hold a single unique piece of information. Each time the connection between computers $A$ and $B$ is activated, the computers connected to $A$ and $B$ (including $A$ and $B$) sync up and share information. The states of the connections are changed $M \leq 10^5$ times and you would like to know how many unique pieces of information are stored on each computer at the end.

@@ -8,8 +8,6 @@ tags:
 mathjax: true
 ---
 
-## Introduction
-
 Today, I'd like to share another really cool programming problem. This problem is [Editor](https://oj.uz/problem/view/BOI15<sub>e</sub>di) from the 2015 Baltic Olympiad in Informatics.
 
 Here's a quick summary of the problem: You've invented a text editor where there are 2 operations: **edit** and **undo**. Each operation has a **level**. A **edit** changes the editor state (initially 0) to some new state. An **undo** of **level** $L$ undoes the most recent operation with **level** strictly less than $L$. Note that an **undo** can undo a previous **undo**. Each **edit** has **level** 0 and the user determines the **level** of each **undo**. You're now given a sequence of $N \leq 10^5$ operations. For each operation, you want to know the character shown on the screen after you apply it.
