@@ -43,7 +43,7 @@ Here, the blue parabola goes through the point $(279, 501)$, which is the optima
 
 ## Observation 2
 
-**Hyperbolas are convex. What can we say about the points that can possibly be the optimal point?** - Not me again
+**"Hyperbolas are convex. What can we say about the points that can possibly be the optimal point?"** - Not me again
 
 Since hyperbolas are convex and we want the hyperbola to be as close to the origin as possible, we only need to consider points on the lower convex hull! More specifically, we only need to consider the points on the convex hull between the point with the smallest $T$ and the point with the smallest $C$.
 
@@ -53,7 +53,7 @@ Since all $t_i$ and $c_i$ are small, this means that there are only about 50000 
 
 ## Observation 3
 
-**Hyperbolas are inconvenient. What if we consider straight lines instead?** - Still not me
+**"Hyperbolas are inconvenient. What if we consider straight lines instead?"** - Still not me
 
 Instead of considering $\sum t_i \cdot \sum c_i$, consider $\sum t_i + \sum c_i$. This is much more convenient for 2 reasons:
 
@@ -76,7 +76,7 @@ Notice how this is a half plane. Finding the minimum $K$ involves shifting the l
 
 ## Observation 4
 
-**Rotating calipers?**
+**"Rotating calipers?"**
 
 Imagine you take a ruler and touch it against the convex hull. If you rotate the ruler around the shape while making sure it keeps in contact, notice that the ruler touches each vertex of it at some point.
 
@@ -86,7 +86,7 @@ This turns out to be enough to get 100 points on the official test data. However
 
 ## Observation 5
 
-**Imagine we have 2 points on a convex hull and we want to find the others. How do we do it?**
+**"Imagine we have 2 points on a convex hull. How do we find the others?"**
 
 If we have 2 points already, we can recursively find the points in-between them (assuming the 2 points aren't adjacent).
 
