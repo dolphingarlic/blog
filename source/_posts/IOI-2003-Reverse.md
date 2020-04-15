@@ -3,15 +3,21 @@ title: IOI 2003 Reverse
 date: 2020-04-06 15:43:57
 tags:
     - IOI
+    - Ad-hoc
+categories:
     - Programming
     - Olympiad
 ---
+
+**Update: Ready my explanation of my solution at https://codeforces.com/blog/entry/75726**
 
 I finally solved [_Reverse_](https://contest.yandex.ru/ioi/contest/558/problems/C/) from IOI 2003! Here's a brief summary of what the problem is about:
 
 You have an ancient computer that has 9 registers and 2 operations. Each register can hold an integer from 0 to 255. An `S` operation in the form `S A B` sets `register[B] = register[A] + 1`. A `P` operation in the form `P A` simply prints `register[B]`. You may choose the 9 starting values of the registers.
 
 Your task is, for a given `N`, print out `N`, `N - 1`, ..., `0` using as few **consecutive** `S` operations as possible.
+
+<!-- more -->
 
 This problem was pretty nice in both concept and implementation... if you were fine with 88 points. If you wanted 100 points though, you had to be a lot more creative.
 

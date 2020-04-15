@@ -3,6 +3,9 @@ title: JOI 2013 Synchronisation
 date: 2020-01-05 15:51:34
 tags:
     - JOI
+    - Graphs
+    - Binary lifting
+categories:
     - Programming
     - Olympiad
 mathjax: true
@@ -15,6 +18,8 @@ Here's a quick summary of the problem: You have $N \leq 10^5$ computers and $N -
 There are many ways to solve this problem (I know of 4 distinct ways), but I'll share what I think is the most elegant solution, which relies on more observations and has relatively light implementation.
 
 Let's solve this problem subtask by subtask, just as we would in an actual competition!
+
+<!-- more -->
 
 ## Subtask 2
 

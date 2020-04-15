@@ -2,14 +2,17 @@
 title: Unusual types of graphs with cool names
 date: 2020-03-28 21:16:56
 tags:
-    - Programming
     - Random
     - Graphs
+categories:
+    - Programming
 ---
 
 Recently, I've come across some unusual types of graphs while solving problems. These graphs often had funny and/or cool names that I thought described what they look like quite well.
 
 Today, I'll share some of these graphs with you (along with some illustrations). If you feel like there are some other cool graphs I should add to this list, please comment them down below.
+
+<!-- more -->
 
 ## Onion
 
