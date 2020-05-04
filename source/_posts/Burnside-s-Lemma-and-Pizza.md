@@ -1,5 +1,5 @@
 ---
-title: Burnside's Lemma and Pizzas
+title: Burnside's Lemma and Pizza
 date: 2020-04-30 10:06:24
 tags:
     - Maths
