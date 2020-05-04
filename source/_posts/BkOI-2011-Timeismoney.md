@@ -31,13 +31,13 @@ Firstly, for the sake of simplicity, let $\sum t_i$ be $T$ and $\sum c_i$ be $C$
 
 For each spanning tree, we can try plotting $T$ against $C$ in the Cartesian plane.
 
-{% asset_img points.png Plot of the sample input %}
+![Plot of the sample input](points.png)
 
 Why would we want to do this?
 
 Well, if we want to have $\sum t_i \cdot \sum c_i = K$, then the points $(t_i, c_i)$ that satisfy that equation form a hyperbola. This means we effectively want to find the hyperbola closest to the origin.
 
-{% asset_img hyperbolas.png Hyperbolas %}
+![Hyperbolas](hyperbolas.png)
 
 Here, the blue parabola goes through the point $(279, 501)$, which is the optimal point.
 
@@ -47,7 +47,7 @@ Here, the blue parabola goes through the point $(279, 501)$, which is the optima
 
 Since hyperbolas are convex and we want the hyperbola to be as close to the origin as possible, we only need to consider points on the lower convex hull! More specifically, we only need to consider the points on the convex hull between the point with the smallest $T$ and the point with the smallest $C$.
 
-{% asset_img chull.png The lower convex hull %}
+![The lower convex hull](chull.png)
 
 Since all $t_i$ and $c_i$ are small, this means that there are only about 50000 such points we need to check. Unfortunately though, we do not know what the points are, so we can't just iterate through them.
 
@@ -72,7 +72,7 @@ What do the points where $a \cdot T + b \cdot C \leq K$ for some $a$, $b$, and $
 
 Notice how this is a half plane. Finding the minimum $K$ involves shifting the line define the half-plane to the left:
 
-{% asset_img half-plane-line.png %}
+![Shifting the line defining the half-plane](half-plane-line.png)
 
 ## Observation 4
 
@@ -94,7 +94,7 @@ Notice how if we draw the line between those 2 points and move the line to the l
 
 Recall from observation 3 that finding the minimum $K$, given an initial $K$, $a$, and $b$ involves shifting the line to the left. Since the gradient of the line is simply $-\frac{b}{a}$ and we know the gradient since we know the 2 points, we can work out $a$ and $b$ and thus find the point where $a \cdot T + b \cdot C$ is minimised!
 
-{% asset_img line-shift.png Shifting the line %}
+![Shifting the line](line-shift.png)
 
 We can then recursively find all points between the first known point and this new point, and all points between this new point and the second known point. This lets us efficiently try out all points on the lower convex hull.
 

@@ -100,3 +100,8 @@ theme: next
 deploy:
   type: git
   repo: https://github.com/dolphingarlic/dolphingarlic.github.io
+
+# Add caption for iamges
+image_caption:
+  enable: true
+  class_name:

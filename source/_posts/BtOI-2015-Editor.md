@@ -37,8 +37,7 @@ Before we move on though, view each operation as a node in a graph. If $Y$ undoe
 
 Notice how the answer for $Y$ is simply the answer for $P_Y$. Additionally, our graph is a forest.
 
-For example, the graph for the above example would look like:
-{% asset_img graph.png Graph %}
+![Graph from the above table](graph.png)
 
 ## Observation 2
 
