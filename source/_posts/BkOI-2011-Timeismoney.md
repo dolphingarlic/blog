@@ -49,7 +49,7 @@ Since hyperbolas are convex and we want the hyperbola to be as close to the orig
 
 ![The lower convex hull](chull.png)
 
-Since all $t_i$ and $c_i$ are small, this means that there are only about 50000 such points we need to check. Unfortunately though, we do not know what the points are, so we can't just iterate through them.
+Since all $t_i$ and $c_i$ are small and there are $O(N^{2/3})$ points on the convex hull if all coordinates are less than $N$, this means that there are only $O((N \cdot T_{max})^{2/3}) \approx 1500$ such points we need to check. Unfortunately, though, we do not know what the points are, so we can't just iterate through them.
 
 ## Observation 3
 
@@ -57,7 +57,7 @@ Since all $t_i$ and $c_i$ are small, this means that there are only about 50000 
 
 Instead of considering $\sum t_i \cdot \sum c_i$, consider $\sum t_i + \sum c_i$. This is much more convenient for 2 reasons:
 
-- Geometrically, this turns into a straight line/half plane.
+- Geometrically, this turns into a straight line/half-plane.
 - Instead of having 2 weights for each edge, we can now simply assign a single weight to each edge.
 
 Unfortunately, this does not get us 100 points.
@@ -70,7 +70,7 @@ If we have $a$ and $b$, we can simply weight each edge as $a \cdot t_i + b \cdot
 
 What do the points where $a \cdot T + b \cdot C \leq K$ for some $a$, $b$, and $K$ look like? If we rearrange the elements, we get the inequality $T \leq -\frac{b}{a} \cdot C + \frac{K}{a}$.
 
-Notice how this is a half plane. Finding the minimum $K$ involves shifting the line define the half-plane to the left:
+Notice how this is a half-plane. Finding the minimum $K$ involves shifting the line defining the half-plane to the left:
 
 ![Shifting the line defining the half-plane](half-plane-line.png)
 
@@ -96,7 +96,7 @@ Recall from observation 3 that finding the minimum $K$, given an initial $K$, $a
 
 ![Shifting the line](line-shift.png)
 
-We can then recursively find all points between the first known point and this new point, and all points between this new point and the second known point. This lets us efficiently try out all points on the lower convex hull.
+We can then recursively find all points between the first known point and this new point, as well as all points between this new point and the second known point. This lets us efficiently try out all points on the lower convex hull.
 
 ## Code
 
