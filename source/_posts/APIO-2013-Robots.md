@@ -16,11 +16,13 @@ I'm not going to go over the problem statement because it's very long and compli
 
 <!-- more -->
 
-Firstly, notice that there are only 2 ways we can get an $(A, B)$ robot on square $(x, y)$. We can either merge an $(A, C)$ robot with a $(C + 1, B)$ robot or we can move an existing $(A, B)$ robot some number of moves to get to $(x, y)$.
+Firstly, notice that there are only 2 ways we can get an $(A, B)$ robot on square $(x, y)$. We can either merge an $(A, C)$ robot with a $(C + 1, B)$ robot or we can push an existing $(A, B)$ robot on $(x', y')$ several times to get to $(x, y)$.
 
-This gives us a basic DP formulation - let $dp[x][y][A][B]$ be the minimum number of moves to get an $A-B$ robot on square $(x, y)$.
+This gives us a basic DP formulation - let $dp[x][y][A][B]$ be the minimum number of moves to get an $(A, B)$ robot on square $(x, y)$.
 
-Initially, $dp[x_i][y_i][i][i] = 0$ for each $1 \leq i \leq N$ and $dp[x][y][A][B] = \inf$. We process the DP in increasing order of $B - A$.
+Initially, $dp[x_i][y_i][i][i] = 0$ for each $1 \leq i \leq N$ and $dp[x][y][A][B] = \infty$. We process the DP in increasing order of $B - A$.
+
+First, do a DFS to find where a robot on square $(x, y)$ ends up if we push it in each of the 4 directions. This can be done in $O(HW)$ time and we only do it once - any robot pushed from the same square in the same direction will end up in the same end square.
 
 For each pair $(A, B)$, we first handle the first way we can form an $(A, B)$ robot. Simply iterate through each square $(x, y)$ and do
 
@@ -29,8 +31,6 @@ $$dp[x][y][A][B] = \min_{A \leq C < B}(dp[x][y][A][C] + dp[x][y][C + 1][B])$$
 This runs in $O(HWN^3)$ time.
 
 Next, we handle the second case.
-
-First, do a DFS to find where a robot on square $(x, y)$ ends up if we push it in each of the 4 directions. This can be done in $O(HW)$ time.
 
 At first, I thought of using Dijkstra, but that turned out to be just a bit too slow and only got me 60 points. Then I realized that since each push costs only 1 move, I could do a modified BFS.
 
