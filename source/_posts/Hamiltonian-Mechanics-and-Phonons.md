@@ -96,13 +96,15 @@ To relate $\omega$ and $k$, we substitute this back into our equation to get $\o
 
 Did you know that a material's elastic modulus (i.e., how squishy/stretchy it is) can be expressed in terms of its density and the speed of sound through it? This amazing fact can be shown with what we just derived.
 
-Consider a crystal where a force $F_{app}$ is acting on an area $A$ with $N$ bonds. The force compresses the crystal by $u$.
+Consider a crystal where a force $F$ is acting on an area $A$ with $N$ bonds. The force compresses the crystal by $u$.
 
-The potential energy in each unit cell is $V(u) = \frac{K}{2}u^2$, so the magnitude of $F_{app}$ is $NKu$. Stress is defined as $\sigma = \frac{F_{app}}{A} = \frac{Ku}{a^2}$ since $A = Na^2$.
+The potential energy in each unit cell is $V(u) = \frac{K}{2}u^2$, so the magnitude of $F$ is $NKu$. Stress is defined as $\sigma = \frac{F}{A} = \frac{Ku}{a^2}$ since $A = Na^2$.
 
 We also know $\sigma = E\varepsilon$ where $\varepsilon$ is the strain of the material. Since strain is the compression per bond length here (i.e., $\frac{u}{a}$), we get $E = \frac{K}{a}$.
 
 This means that $v_g = \sqrt{\frac{Ka^3}{m}} = \sqrt{\frac{E}{\rho}}$. Therefore, we get the relation $E = \rho v_g^2$.
+
+In real experiments, elastic modulus is measured by attaching a piezoelectric crystal to one end of the material and then measuring the time it takes for a sound excitation to reach the other end.
 
 ## Diatomic Case
 
