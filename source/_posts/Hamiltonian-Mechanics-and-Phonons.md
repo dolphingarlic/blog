@@ -12,13 +12,13 @@ mathjax: true
 
 I believe that this is the first unit of 3.033? The class is really interesting so far, and it's really surprising to see how nanoscale properties influence the macroscopic properties of things. It's also quite surprising how much physics and differential equations are involved, but I can't say I wasn't expecting this. After all, everything in this class' name screams quantum mechanics.
 
+<!-- more -->
+
 # Hamiltonian Mechanics
 
-In 8.01, we learnt that the energy of an object can be written as $E = \frac{mv^2}{2} + V$ where $m$, $v$, and $V$ are the mass, velocity, and potential energy of the object.
+In Newtonian mechanics, we learnt that the energy of an object can be written as $E = \frac{mv^2}{2} + V$ where $m$, $v$, and $V$ are the mass, velocity, and potential energy of the object.
 
 Hamilton had the idea to rewrite the kinetic energy as $\frac{p^2}{2m}$ where $p$ is the momentum of the object. Hence, Hamiltonian mechanics was born. In fact, this rearrangement is so special that we don't even use $E$ for energy anymore -- we use $H$ instead (for "Hamiltonian").
-
-<!-- more -->
 
 Wait, is there seriously a whole branch of mechanics named after a guy who rearranged one term of an equation? What's so special about this form anyway? The usefulness of this form arises when we take the **partial derivatives** of $H$ with respect to $p$ and $x$:
 
@@ -131,3 +131,10 @@ At $k \approx 0$ on the acoustic branch, they move in the same direction, so the
 ![Acoustic branch movement](acoustic.png)
 
 There's a gap between the two branches -- between $\omega = \sqrt{\frac{4G}{m}}$ and $\omega = \sqrt{\frac{4K}{m}}$. This gap is known as the **phononic band gap**, and it represents the range of wavelengths that can't propagate through this material -- it's effectively soundproof to those frequencies!
+
+In general, periodicity leads to band gaps. This also applies to optical properties of materials, which we'll see later.
+
+# References
+
+- MIT Opencourseware. 2013. Electronic, Optical and Magnetic Properties of Materials. [ONLINE] Available at: https://ocw.mit.edu/courses/3-024-electronic-optical-and-magnetic-properties-of-materials-spring-2013/. [Accessed 9 June 2022].
+- YouTube. 2013. Phonons. [ONLINE] Available at: https://youtu.be/M4WQs_U1nmU. [Accessed 10 June 2022].
