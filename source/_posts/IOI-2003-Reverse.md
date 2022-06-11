@@ -9,7 +9,7 @@ categories:
     - Olympiad
 ---
 
-**Update: Ready my explanation of my solution at https://codeforces.com/blog/entry/75726**
+**Update: Read my explanation of my solution at https://codeforces.com/blog/entry/75726**
 
 I finally solved [_Reverse_](https://contest.yandex.ru/ioi/contest/558/problems/C/) from IOI 2003! Here's a brief summary of what the problem is about:
 
