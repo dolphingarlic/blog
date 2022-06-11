@@ -2,6 +2,8 @@
 title: '''The Dream House'' by Craig Higginson - Summary'
 date: 2020-07-10
 tags:
+    - Random
+    - Literature
 ---
 
 **Patricia**: I hate my life.
@@ -17,6 +19,8 @@ tags:
 **Patricia**: Ok maybe yes, but how?
 
 *Flashback to 20 years ago*
+
+<!-- more -->
 
 **Grace**: Richard, I’m pregnant.
 **Richard**: Not anymore. *Releases dogs on her.*
