@@ -22,7 +22,7 @@ tags:
 
 <!-- more -->
 
-**Grace**: Richard, I’m pregnant.
+**Grace**: Richard, I'm pregnant.
 **Richard**: Not anymore. *Releases dogs on her.*
 **Grace**: *Dies.*
 
@@ -34,7 +34,7 @@ tags:
 **Patricia**: Ok maybe yes, but did Richard really rape Grace?
 **Patricia**: Beeeeeaaaaauuutttyyyy!
 **Beauty**: I hate Looksmart but he is telling the truth, uMesis.
-**Patricia**: I’m sorry, Looksmart.
+**Patricia**: I'm sorry, Looksmart.
 **Looksmart**: Okay. *Leaves Dwaleni.*
 **Beauty**: Lol, psyche. Grace never loved Looksmart and Richard payed her as a prostitute.
 **Patricia**: Okay.
