@@ -4,6 +4,8 @@ date: 2020-07-10
 tags:
     - Random
     - Literature
+categories:
+    - Literature
 ---
 
 **Patricia**: I hate my life.
